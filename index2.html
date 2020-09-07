@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Course</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li> <a href="index.html">Head back to HTML practice ◀</a> </li>
+    </ul>
+    <hr>
+    <h1>Inline CSS</h1>
+    <p>You can add CSS to your site without having to create an additional file. For example, with the background color: <br>
+      If you head to the body tag, and insert the atribute <strong>style="background-color: blue;"</strong>, the site's background will turn blue, or any color you want. <br>
+      The atribute style refers to CSS. <br>
+      <a href="https://colorhunt.co/">More CSS Colors</a> </p>
+    <hr>
+    <h1>Internal CSS</h1>
+    <p>This will allow us to insert CSS to our site by adding code to the head of our site. <br>
+      In order to get this done we have to diference between the head tag and the body tag of our HTML. We'll have to add a <strong>Style Tag</strong> (opened and closed) in the head. <br>
+      Next, choose an element that appears more than once in your site. In this case, it's going to be the horizontal rule lines. <br>
+      Write the element followed by the curly quotes <em>(hr{})</em>. <br>
+      Now, write the style you want to afect in the following way between the curly quotes. </p>
+    <strong>
+      hr { <br>
+      background-color: black; <br>
+      border-style: none; <br>
+      height: 2px; <br>
+      }
+    </strong>
+    <p>You can also affect othe tags in the same way, just specify the tag in front of the {}.</p>
+    <hr>
+    <h1>External CSS</h1>
+    <p>It's similar to using Internal CSS. To use it you have to specify the tag you want it to affect, and write between {} the changes you want it to make, in the same way as the Internal CSS ⬆. The only diference is now, you'll be doing it not in
+      the html file you've created, but in a differnt file. <br> </p>
+    <ol>
+      <li>Create a folder named <strong>css</strong> in the same location as the .html file</li>
+      <li>Once in the <em>css folder</em>, create a file and name it <strong>styles.css</strong> </li>
+      <li>Head to the .html file and create a self-closing <strong>link tag</strong> in the head</li>
+      <li>Add the following atributes to the tag: <strong>rel="stylesheet" href="css/styles.css"</strong> </li>
+      <li>Start adding files to your css file</li>
+    </ol>
+  </header>
+  <main>
+    <p>For example, I,m going to insert everything before this in a <strong>header</strong> tag, and finish it before opening a <strong>main</strong> tag. Now, in the css file, I'm going to write: <em>main { background-color: #e4e3e3; }</em>. <br>
+      This means everything between the <em>main tag</em> should have the background color I've specified. </p>
+    <p>This styles file could be applied to more .html files by specifying it in the file's head.</p>
+    <h2>Class Selectors</h2>
+    <p>On css, the tag you have to specify in front of the brackets refers to every equal tag on the .html file. This means that for example, if you want to give a style to a paragraph tag, that style will be applied to every paragraph tag. <br>
+      This can be solved by adding a <strong>class=""</strong> atribute to the tag you want to diferenciate from the rest. In order to use it, you have to write an <em>exampeword</em> in the atribute. After that, head tho the css file and type
+      <em>.exampleword{}</em>. <br>
+      This way, the styles you comand will only affect the tags with the same class atribute (you can add the same class atribute to more than one tag). </p>
+    <h2>Id Selectors</h2>
+    <p>Theese are similar to class selectors. In order to use them, this time you have to add a <strong>id=""</strong> atribute to the tag in the .html file. After that, head tho the css file and this time type <em>#exampleword{}</em>. <br>
+      The big diference between Id and Class selectos is that you won't be able to use the same Id Selector more than once. </p>
+    <h2>Sudo Class</h2>
+    <p>This referes to the state of html elements. In order to use it you have to add <strong>:</strong> after the specification on the .css document. </p>
+    <p class="sudoex">For example, one of the most common states is <strong>hover</strong>. This state indicates styles that will only be applied when moving the mouse over the specified object. Therefore, this specific paragraph will change when the
+      mouse passes over it because I've added into the .css: <br>
+      <strong> .sudoex:hover { <br>
+        font-size: 30px; <br>
+        } </strong> </p>
+    <h2>Favicon</h2>
+    <p>These are represented on the image appearing on the side of the tab. In order to insert a favicon you have to a add a <strong>link</strong> tag in the head section of the .html file. Then, insert the following atributes to the tag: <br>
+      <strong>rel="icon" <br> href="example.ico"</strong>. <br>
+      After that, head to a <a href="https://www.favicon.cc/">icon generator</a> or use an existing icon and place it in the same location as the file. </p>
+    <div class="divex">
+      <h2>Divs</h2>
+      <p>This is a .html element that allows us to divide the content on our website. It is useless by itself, but by using it you can add styles to a big group of elements without having to add class selectors to every single one of them. <br>
+        This is a <em>open and close</em> tag, and it can have diferent atributes applied such as backgrounds, sizes, borders... <br>
+        For example, this whole paragraph will be fitted in a <strong>div</strong> tag, without affecting the rest of the site. </p>
+    </div>
+    <h2>Display</h2>
+    <p>This .css atribute refers to the way elements are displayed on the site and will locate them one on top ot the other (block), or one next to the other (inline). There are four types of display: </p>
+    <ul>
+      <li>Block <p>This are elements that have 100% width by default, such as paragraphs and headings. </p>
+      </li>
+      <li>Inline <p>This element take up only the space they need, such as <em>span, div, image and anchor</em> tags. They can affect up to a few letters, or entire sections. </p>
+      </li>
+      <li>Inline-Block <p>You can add this atribute to a tag if you want to modify it as if it were block displayed, but also want it to be inline. </p>
+      </li>
+      <li>None <p>This property removes the affected tag as if it were deleted. This can be usefull if there's an element which you want to make disappear after something happends, or when hovering, or similar. <br>
+          A similar property that can be added is <strong>visibility:hidden;</strong> This will remove the element from the site, but it's position will remain untouched, as if it were there, but hidden. </p>
+      </li>
+    </ul>
+    <h2>Position</h2>
+    <p>This .css atribute refers to the position of elements on the site.</p>
+    <ul>
+      <li>Static <p>All .html elements are static in their position by default. This atribute makes the elements stick to the HTML rules.</p>
+      </li>
+      <li>Relative <p>Relative allows us to modify the position of the .html elements starting from their static position. <br>This can be set to four coordinates: Top; Left; Right; Bottom. <br>
+          This refers to the specific side of the element we want to modify. It's important to take into account that relative position <strong>WILL NOT</strong> affect the rest of the items. This means that the element will move from its place, but
+          its original spot will remain untouched. </p>
+      </li>
+      <li>Absolute <p>Absolute <strong>DOES</strong> affect the rest of the ellements. This atribute basically removes the element's block space and allows us to position it wherever we want without affecting the rest of the website. <br>This can be
+          set to four coordinates: Top; Left; Right; Bottom. </p>
+      </li>
+      <li>Fixed <p>This atribute works in a similar way to Absolute, however, its main function is to place the selected element in a specific position that will remain even if we scroll out of its view site. This will allow us to place diferent
+          elements such as buttons or bars for the user allwais to keep in sight.</p>
+      </li>
+    </ul>
+    <h2>Centering Elements</h2>
+    In order to center elements there are two main ways to achieve it:
+    <ul>
+      <li>text-align: center;</li>
+      <li>margin: auto;</li>
+    </ul>
+    <h2>Font-Styling</h2>
+    <p>First of all, you have to take into account that you should be using <strong>Web-Safe</strong> font. This means that not all fonts will appear the same in every browser or search engine, and web-safe fonts ensure this wont happend. <br>
+      So, styling fonts is as simple as adding a .css atribute to the body, or to any specific text element you want it to affect: <br>
+      <em style="font-family: arial;">font-family: arial;</em> <br>
+      <em>font-size: 12px;</em> <br>
+      If you dont want to use any of these fonts, but you want everybody to view the same fonts, you can head to <a href="https://fonts.google.com/">Google Fonts</a>, where you can acces a large variety of free fonts that will be available on every
+      google browser. <br>
+      To use this method, you have to embed the code that google fonts will provide into te head of your file, after that, you can use the font as simple as it were installed. </p>
+    <h2>Sizing</h2>
+    <p>In order to resize <strong>text</strong>, you must apply a certain .css tag: <br>
+      <em style="font-size:12px;">font-size: 12px;</em>&nbsp; &nbsp; &nbsp;<em style="font-size:20px;">font-size: 20px;</em><br>
+    </p>
+    <h2>Floating</h2>
+    <p>Floating an item to a certain position makes it move to that position giving it a similarity with <em>block: inline;</em>, but it makes the rest of the elements at the same level (same div for example) wrap around it. </p>
+  </main>
+</body>
+
+</html>

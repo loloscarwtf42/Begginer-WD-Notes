@@ -1,0 +1,28 @@
+hr {
+  background-color: black;
+  border-style: none;
+  height: 2px;
+}
+
+main {
+  background-color: #e4e3e3;
+  margin: 0;
+}
+
+.sudoex:hover {
+  font-size: 30px;
+}
+
+.divex{
+  border-color: black;
+  border-style: solid;
+  background-color: white;
+}
+
+.divex p{
+  margin: 10px;
+}
+
+.divex h2{
+  margin: 10px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Course</title>
+</head>
+
+<body>
+  <h1>Header tags: h1, h2...</h1>
+  <p>P, is for paragraph</p>
+  <p><em>EM, or I,</em> makes it italic</p>
+  <p><strong>STRONG, or B</strong> makes it bold</p>
+  <p>HR is to make a line like the one underneath. You can add atributes <em>(size, color, noshade...)</em></p>
+  <hr>
+  <h1>Lists</h1>
+  <p><strong>UL</strong> stands for Unordered List, and <strong>OL</strong>stands for Ordered List. You have to add the tag <strong>LI</strong> between theese for each item.</p>
+  <ul>
+    <li>Unordered</li>
+    <li>List</li>
+  </ul>
+  <ol>
+    <li>Ordered</li>
+    <li>List</li>
+  </ol>
+  <hr>
+  <h1>Images</h1>
+  <p><strong>IMG</strong> adds images, theese have to include the atribute <strong>src=""</strong>, this stands for SOURCE. The source can be directed to a specific location on the PC <em>(desktop/folder/image.jpg)</em>, or to a link or address like
+    the following image. The atribute <strong>alt=""</strong> stands for an alternative description. You'll be able to see this description when you hover over the image.</p>
+  <p>The atributes <strong>width</strong> and <strong>height</strong> are used to resize the image. Theese can be represented in Pixels (px) or Percentages (%). This image has a 30% width atribute, this means that the height will be automaticly
+    scaled and the width of the image will always be 30% of the window.</p>
+  <img width="30%" src="https://pbs.twimg.com/media/EUEBoQ_WoAEXw_b.jpg" alt="App Icon designed by Oscar M. Ruiz Benton">
+  <hr>
+  <h1>Links</h1>
+  <p><strong>A</strong>, is for links. The atribute <strong>href=""</strong> gives it a directory and the the text between the A tag can be whatever you want. The directory of the atribute can be either a link to a diferent page, or a location on
+    your own PC <em>(desktop/folder/index.html)</em>. The A tag can be inserted in any text, such as paragraphs, lists...</p>
+  <a href="https://twitter.com/oskr_ruiz_42">Link to my Twitter</a>
+  <p>If you want to open the link in a new tab, press the CTRL key as you clik on it.</p>
+  <hr>
+  <h1>Tables</h1>
+  <p><strong>Table</strong>, is used to make tables. Inside the table tag, every <strong>TR</strong> is a table row, and each will be one on top of the other.<br>
+    Every <strong>TD</strong> is a table data or cell tag, and they will be positioned from left to right inside every TR.</p>
+  <table>
+    <thead>
+      <th>Row 1</th>
+      <th>Row 2</th>
+      <th>Row 3</th>
+    </thead>
+    <tr>
+      <td>Tr1, td1</td>
+      <td>Tr1, td2</td>
+      <td>Tr1, td3</td>
+    </tr>
+    <tr>
+      <td>Tr2, td1</td>
+      <td>Tr2, td2</td>
+      <td>Tr2, td3</td>
+    </tr>
+  </table>
+  <p>Tables have also got <strong>thead, tbody, tfoot</strong> tags on the inside. The Table Header uses inner tags such as <strong>th</strong>.<br>
+    This separations are used to give tables diferent organizations and styles that'll be used on css mainly.</p>
+  <p>We can add atributes such as <strong>border=""</strong> filled with px, or <strong>cellspacing=""</strong> for other views of it.</p>
+  <table border="2px" cellspacing="8px">
+    <thead>
+      <th>Row 1</th>
+      <th>Row 2</th>
+      <th>Row 3</th>
+    </thead>
+    <tr>
+      <td>Tr1, td1</td>
+      <td>Tr1, td2</td>
+      <td>Tr1, td3</td>
+    </tr>
+    <tr>
+      <td>Tr2, td1</td>
+      <td>Tr2, td2</td>
+      <td>Tr2, td3</td>
+    </tr>
+  </table>
+  <hr>
+  <h1>Forms</h1>
+  <p><strong>Form</strong> is used to make up forms for users to complete and submit. <br>
+    Inside the Form tag, there are diferent tags and atributes to be used. <br> <strong>Label</strong> is situated between this tag and it's used to give a name or lable to te diferent tasks of the form. <br>
+    <strong>Input</strong> is located on the same place and it's used to create a space to complete an action <em>(type, submit...)</em>. This tag uses the atribute <strong>type=""</strong>, and can be filled with diferent uses <em>(text,
+      sumbit).</em> </p>
+  <form class="" action="index.html" method="post">
+    <label>Form:</label>
+    <input type="text" name="" value="">
+    <input type="submit" name="">
+  </form>
+  <p>Theese are different variations of the input tag. More uses can be found on the <a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML MDN</a> page. </p>
+  <form class="" action="index.html" method="post">
+    <label>Button:</label>
+    <input type="button" name="" value="">
+  </form>
+  <form class="" action="index.html" method="post">
+    <label>Color:</label>
+    <input type="color" name="" value="">
+  </form>
+  <form class="" action="index.html" method="post">
+    <label>Checkbox:</label>
+    <input type="checkbox" name="" value="">
+  </form>
+  <form class="" action="index.html" method="post">
+    <label>Date:</label>
+    <input type="date" name="" value="">
+  </form>
+  <form class="" action="index.html" method="post">
+    <label>Password:</label>
+    <input type="password" name="" value="">
+  </form>
+  <p> <strong>Textarea</strong> is used to make a large space to type in within your form. This can be modified changing the columns or the rows through the atributes on the tag.</p>
+  <form class="" action="index.html" method="post">
+    <textarea name="name" rows="8" cols="80"></textarea>
+  </form>
+  <p>In order to use this form a to send an email, we'll have to change the atributes within the form tag. <br>
+    Theese are the atrifutes in the form tag: <em>class="" action="index.html" method="post"</em> <br>
+    It shold look like this: <em>action="mailto:whoeveruwant@gmail.com" method="post" enctype="text/plain"</em>, plus, the name atribute in every input should have its own description. </p>
+  <hr>
+  <ul>
+    <li> <a href="index2.html">Head to CSS practice ▶</a> </li>
+  </ul>
+</body>
+
+</html>
